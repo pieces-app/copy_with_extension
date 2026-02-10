@@ -13,7 +13,11 @@ dependencies:
   build: ^4.0.0
   source_gen: ^4.0.1
   copy_with_extension:
-    path: ../copy_with_extension
+    git:
+      url: git@github.com:pieces-app/copy_with_extension.git
+      path: copy_with_extension
+      tag_pattern: '{{version}}'
+    version: ^11.0.1
   meta: ^1.16.0
 
 dev_dependencies:
